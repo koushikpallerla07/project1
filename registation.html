@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+
+    <style>
+        body {
+            background: linear-gradient(120deg, #87cefa, #00aaff);
+            font-family: Georgia, serif;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            background-color: #064b91;
+            padding: 15px;
+            border-radius: 15px;
+        }
+
+        form {
+            background-color: #f0f8ff;
+            padding: 20px;
+            border: 2px solid #008cff;
+            border-radius: 20px;
+        }
+
+        fieldset {
+            border: 2px solid #008cff;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+        legend {
+            background-color: #007bdb;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        label {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            padding: 8px;
+            margin: 8px;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            accent-color: #007bff;
+        }
+
+        button {
+            background-color: #007bdb;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #004b91;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Student Registration Form</h1>
+
+    <form>
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label>Student Name:</label>
+            <input type="text" placeholder="Enter your name">
+            <br><br>
+
+            <label>Email:</label>
+            <input type="email" placeholder="Enter your email">
+            <br><br>
+
+            <label>Password:</label>
+            <input type="password" placeholder="Enter password">
+            <br><br>
+
+            <label>Age:</label>
+            <input type="number" style="width: 90px;">
+            <br><br>
+
+            <label>Gender:</label>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills</legend>
+
+            <input type="checkbox"> HTML
+            <input type="checkbox"> CSS
+            <input type="checkbox"> JavaScript
+            <br><br>
+
+            <label>Department:</label>
+            <select>
+                <option>Select Department</option>
+                <option>CSE</option>
+                <option>ECE</option>
+                <option>EEE</option>
+                <option>IT</option>
+            </select>
+            <br><br>
+
+            <label>Select a Course:</label>
+            <input type="text">
+            <br><br>
+
+            <label>Date of Birth:</label>
+            <input type="date">
+            <br><br>
+
+            <label>Address:</label>
+            <textarea rows="4" cols="35"
+            placeholder="Enter your address"></textarea>
+            <br><br>
+
+            <label>Upload Photo:</label>
+            <input type="file" accept="image/*">
+            <br><br>
+
+            <button type="submit">Register</button>
+            <button type="reset">Clear</button>
+
+        </fieldset>
+
+    </form>
+
+</body>
+</html>
